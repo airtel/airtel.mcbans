@@ -22,7 +22,7 @@
         /* Base style */
         @import url("<?php echo base_url(); ?>assets/css/base.css");
     </style>
-    
+
     <script>document.documentElement.className += 'js';</script>
     
 </head>

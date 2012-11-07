@@ -24,8 +24,6 @@ body {
 
 /* Basic wrapper that holds all shop */
 .wrapper {
-    padding: 2px;
-    background-color: #FFF;
     min-height: 550px;
     background: url("../img/right_bg.png");
 }
