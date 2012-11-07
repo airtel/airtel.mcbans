@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow" />
     
     <!-- Custom header font -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans&subset=latin" />
+    <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans&subset=latin" />-->
     
      <!-- Loading css styles -->
     <style type="text/css">
