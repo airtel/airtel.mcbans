@@ -1,0 +1,272 @@
+body {
+    font-size: 12px;
+    background: url("../img/bg.png");
+}
+
+/* Preload fix */
+.js .content, .js .banner_holder {
+    display: none;
+}
+
+/* Preloading */
+.js #loading_layer {
+    visibility: visible;
+    display:block !important;
+}
+
+.js #loading_layer img {
+    position: relative;
+    top: 200px;
+    left: 350px;
+    width:64px;
+    height:10px;
+}
+
+/* Basic wrapper that holds all shop */
+.wrapper {
+    padding: 2px;
+    background-color: #FFF;
+    min-height: 550px;
+    background: url("../img/right_bg.png");
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#container {
+    min-width: 800px;
+}
+
+.content {
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 15px;
+    min-height: 500px;
+}
+
+.well {
+    box-shadow: none;
+}
+
+.shadow-select {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.shadow-select:hover, .shadow-select:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+}
+
+/* Tabs */
+.tabbable-bordered { 
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;border-radius:4px;
+}
+
+.tabbable-bordered > .nav-tabs {
+    margin: 0;
+}
+
+.tabbable-bordered .tab-content {
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 0;
+    overflow: auto;
+    padding: 18px 0 0;
+}
+
+.tabbable-bordered > .tab-content {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    border-width: 0 1px 1px;
+    padding: 20px 20px 10px !important;
+}
+
+.tab-content {
+    background-color: #fff;
+}
+
+/* Payment styles */
+.payment {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin-top: -5px;
+    position: relative;
+    vertical-align: text-top;
+    width: 24px;
+    padding-right: 3px;
+}
+
+.sms {
+    background-image: url("../img/payments/sms_24x24.png");
+}
+
+.ibank {
+    background-image: url("../img/payments/ibank_24x24.png");
+}
+
+.paypal {
+    background-image: url("../img/payments/paypal_24x24.png");
+}
+
+/* Form errors */
+.f_legend {
+    border-bottom: 1px solid #DCDCDC;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+}
+
+.f_error input, .f_error select, .f_error .chzn-container-single .chzn-single {
+    color: #b94a48;
+    border-color: #b94a48
+}
+
+.f_error input:focus, .f_error select:focus {
+    -webkit-box-shadow: 0 0 6px #d59392;
+    -moz-box-shadow: 0 0 6px #d59392;
+    box-shadow: 0 0 6px #d59392;
+    border-color: #953b39
+}
+
+.f_error .input-prepend .add-on, .f_error .input-append .add-on {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #b94a48;
+}
+.f_error label.error {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #C62626;
+}
+
+input[type="text"] + label.error, input[type="password"] + label.error, select + label.error, textarea + label.error {
+/*    margin-top: -6px;*/
+}
+
+.f_error label.radio + label.error, .f_error label.checkbox + label.error {
+    margin-top: 5px;
+}
+
+.input-prepend.f_error label.error,.input_append.f_error  label.error {
+    margin-top: 4px;
+}
+
+.control-group.f_error label.error {
+    margin-top: 2px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    font-size: 12px;
+}
+
+.form-horizontal .input-label {
+    color: #333333;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 4px;
+    text-align: left;
+    width: 140px;
+}
+
+label, input, button, select, textarea, .btn
+{
+    font-size: 12px;
+}
+
+/* Fix for tooltips */
+.modal-open .dropdown-menu {
+    z-index: 2050;
+}
+
+.modal-open .dropdown.open {
+    *z-index: 2050;
+}
+
+.modal-open .popover {
+    z-index: 2060;
+}
+
+.modal-open .tooltip {
+    z-index: 2070;
+}
+    
+.modal > form {
+    margin-bottom: 0;
+}
+
+/* Baner holder */
+.banner_holder {
+    display: block;
+    float: right;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    padding-right: 3px;
+}
+
+.banner_holder a {
+    opacity: 0.6;
+}
+
+.banner_holder a:hover {
+    opacity: 1.0;
+}
+
+.image-holder {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.table-bans td img {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #dff0d8;
+    cursor: pointer;
+}
+
+#unban-payment {
+    margin-bottom: 0;
+}
+
+.well {
+    padding: 5px;
+}
+
+input, textarea, .uneditable-input {
+    width: 220px;
+}
+
+#alert-area .alert {
+    margin-bottom: 5px;
+}
+
+.control-button {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-right: 83px;
+    text-align: right;
+}
